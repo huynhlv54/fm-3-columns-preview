@@ -1,0 +1,87 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-darkgray: hsl(0, 0%, 95%);
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.7;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-main {
+    max-width: 1080px;
+    color: var(--very-light-darkgray);
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    padding: 3em;
+    width: 300px;
+}
+
+.product.orange {
+    background-color: var(--bright-orange);
+}
+
+.product.dark-cyan {
+    background-color: var(--dark-cyan);
+}
+
+.product.very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+}
+
+.product-name {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0.5em 0 0 0;
+}
+
+button.learn-more {
+    margin: 4em 1em 0em 0em;
+    padding: 0.75em 1.5em;
+    border-radius: 2em;
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+}
+
+button.learn-more:hover {
+    background-color: var(--transparent-white);
+}
+
+.orange button {
+    color: var(--bright-orange);
+}
+
+.dark-cyan button {
+    color: var(--dark-cyan);
+}
+
+.very-dark-cyan button(
+    colorvar(--very-dark-cyan)
+)
+
